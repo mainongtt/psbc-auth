@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.psbc.zk.dao.UserDao" >
+
+
+    <select id="getUser" parameterType="java.lang.String"
+            resultType="com.psbc.zk.entity.XcUserExt">
+
+    SELECT
+    *
+    FROM
+      "user"
+    WHERE username = #{username}
+    </select>
+
+</mapper>

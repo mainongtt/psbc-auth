@@ -1,0 +1,3 @@
+# Project exclude paths
+/psbc-oauths/target/
+/pscb-eureka/target/
